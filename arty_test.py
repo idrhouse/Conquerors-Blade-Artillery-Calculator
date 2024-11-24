@@ -62,11 +62,11 @@ def calcular_materiales():
             for widget in frame_resultado.winfo_children():
                 widget.destroy()
             label_error = tk.Label(frame_resultado, text="Por favor selecciona una artillería.", bg="#f0f0f0", fg="red", font=("Helvetica", 10, "italic"))
-            label_error.grid(row=0, column=0, columnspan=2, pady=5)
+            label_error.grid(row=0, column=0, columnspan=2, pady=2)
 
     except ValueError:
         label_error = tk.Label(frame_resultado, text="Por favor ingresa un número válido.", bg="#f0f0f0", fg="red", font=("Helvetica", 10, "italic"))
-        label_error.grid(row=0, column=0, columnspan=2, pady=5)
+        label_error.grid(row=0, column=0, columnspan=2, pady=2)
 
 # Función para seleccionar la artillería al hacer clic en la imagen
 def seleccionar_artilleria(artilleria):
@@ -87,18 +87,18 @@ def resource_path(relative_path):
 # Crear la ventana principal
 ventana = tk.Tk()
 ventana.title("Calculadora de Crafteo con Imágenes de Conquerors Blade")
-ventana.geometry("1600x900")
+ventana.geometry("720x620")
 
 # Agregar imagen de fondo
-imagen_fondo = Image.open(resource_path("./extras/fondo.png"))
-imagen_fondo = imagen_fondo.resize((1600,900))  # Ajustar tamaño
+imagen_fondo = Image.open(resource_path("./extras/fondo2.png"))
+imagen_fondo = imagen_fondo.resize((720,620))  # Ajustar tamaño
 imagen_fondo_tk = ImageTk.PhotoImage(imagen_fondo)
 label_fondo = tk.Label(ventana, image=imagen_fondo_tk)
 label_fondo.place(x=0, y=0, relwidth=1, relheight=1)
 
 # Frame para contener las artillerías y resultados
 frame_principal = tk.Frame(ventana, bg="#f0f0f0")
-frame_principal.pack(pady=20)
+frame_principal.pack(pady=2)
 
 # Frame para las artillerías
 frame_artillerias = tk.Frame(frame_principal, bg="#f0f0f0")
@@ -106,7 +106,7 @@ frame_artillerias.grid(row=0, column=0, padx=10)
 
 # Frame para los resultados
 frame_resultado = tk.Frame(frame_principal, bg="#f0f0f0")
-frame_resultado.grid(row=0, column=1, padx=10)
+frame_resultado.grid(row=0, column=1, padx=5)
 
 # Widgets para la cantidad
 label_cantidad = tk.Label(ventana, text="Cantidad a fabricar:", bg="#f0f0f0", font=("Helvetica", 12))
@@ -117,13 +117,13 @@ entry_cantidad.pack(pady=5)
 
 # Cargar imágenes de las artillerías
 label_instrucciones = tk.Label(frame_artillerias, text="Selecciona una artillería:", bg="#f0f0f0", font=("Helvetica", 12))
-label_instrucciones.grid(row=0, column=0, pady=10, columnspan=3)
+label_instrucciones.grid(row=0, column=0, pady=2, columnspan=3)
 
 # Cargar las imágenes de artillerías
 imagenes_artillerias = {}
 for artilleria in artillerias.keys():
     imagen = Image.open(resource_path(f"./artillerias/{artilleria.lower()}.png"))  # Asegurarse que el nombre de archivo es correcto
-    imagen = imagen.resize((100, 100))  # Redimensionar si es necesario
+    imagen = imagen.resize((75, 75))  # Redimensionar si es necesario
     imagen_tk = ImageTk.PhotoImage(imagen)
     imagenes_artillerias[artilleria] = imagen_tk
 
@@ -131,7 +131,7 @@ for artilleria in artillerias.keys():
 fila, columna = 1, 0
 for artilleria, imagen_tk in imagenes_artillerias.items():
     boton = tk.Button(frame_artillerias, image=imagen_tk, command=lambda a=artilleria: seleccionar_artilleria(a), bg="#4CAF50", fg="white", bd=2, relief="raised")
-    boton.grid(row=fila, column=columna, padx=10, pady=10)
+    boton.grid(row=fila, column=columna, padx=2, pady=2)
 
     columna += 1
     if columna == 3:
@@ -140,7 +140,7 @@ for artilleria, imagen_tk in imagenes_artillerias.items():
 
 # Mostrar la artillería seleccionada
 label_seleccion = tk.Label(frame_artillerias, text="Artillería seleccionada: Ninguna", bg="#f0f0f0", font=("Helvetica", 12))
-label_seleccion.grid(row=fila, column=0, columnspan=3, pady=10)
+label_seleccion.grid(row=fila, column=0, columnspan=3, pady=2)
 
 # Frame para mostrar resultados de materiales
 frame_materiales = tk.Frame(frame_resultado, bg="#f0f0f0")
@@ -148,7 +148,7 @@ frame_materiales.grid(row=0, column=0)
 
 # Botón para calcular los materiales
 boton_calcular = tk.Button(ventana, text="Calcular Materiales", command=calcular_materiales, bg="#008CBA", fg="white", font=("Helvetica", 12))
-boton_calcular.pack(pady=20)
+boton_calcular.pack(pady=2)
 
 # Cargar imágenes de materiales
 imagenes_materiales = {
