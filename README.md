@@ -1,4 +1,4 @@
-# Easy Artillery Calculator for the game Conquerors Blade.
+# Easy Artillery Calculator for the game [Conquerors Blade](https://store.steampowered.com/app/835570/Conquerors_Blade/).
 
 Link to the ones that doesn't know how to use git/Link para los que no saben usar git:
 
