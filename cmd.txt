@@ -1,0 +1,1 @@
+py -3.11 -m PyInstaller --onefile --noconsole --add-data "artillerias;artillerias" --add-data "materiales;materiales" --add-data "extras;extras" arty_test.py
