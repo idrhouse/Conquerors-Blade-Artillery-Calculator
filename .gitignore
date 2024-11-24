@@ -1,4 +1,3 @@
 *.txt
 /cmd.txt
-**.png
-*.png
+build/
