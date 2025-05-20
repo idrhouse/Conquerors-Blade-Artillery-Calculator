@@ -10,12 +10,12 @@ artillerias = {
     "Metralla morada": {"Hierro fundido": 200, "Madera alisada": 100, "Cobre mejorado": 100, "Piedra cortada": 100, "Plata": 1000},
 
     "Vacio": {"Cobre en bruto": 0, "Madera seca": 0, "Hierro en bruto": 0, "Piedra en bruto": 0, "Plata": 0},
-    "Mortero azul": {"Cobre mejorado": 80, "Hierro fundido": 80, "Piedra cortada": 40, "Madera alisada": 40, "Plata": 500},
-    "Mortero morado": {"Cobre mejorado": 160, "Hierro fundido": 160, "Piedra cortada": 80, "Madera alisada": 80, "Plata": 1000},
+    "Mortero azul": {"Cobre mejorado": 100, "Hierro fundido": 100, "Piedra cortada": 50, "Madera alisada": 50, "Plata": 500},
+    "Mortero morado": {"Cobre mejorado": 200, "Hierro fundido": 200, "Piedra cortada": 100, "Madera alisada": 100, "Plata": 1000},
 
-    "Culebrina verde": {"Cobre en bruto": 160, "Madera seca": 40, "Hierro en bruto": 40, "Piedra en bruto": 40, "Plata": 250},
-    "Culebrina azul": {"Cobre mejorado": 80, "Madera alisada": 40, "Hierro fundido": 40, "Piedra cortada": 40, "Plata": 500},
-    "Culebrina morada": {"Cobre mejorado": 160, "Madera alisada": 80, "Hierro fundido": 80, "Piedra cortada": 80, "Plata": 1000},
+    "Culebrina verde": {"Cobre en bruto": 200, "Madera seca": 50, "Hierro en bruto": 50, "Piedra en bruto": 50, "Plata": 250},
+    "Culebrina azul": {"Cobre mejorado": 100, "Madera alisada": 50, "Hierro fundido": 50, "Piedra cortada": 50, "Plata": 500},
+    "Culebrina morada": {"Cobre mejorado": 200, "Madera alisada": 100, "Hierro fundido": 100, "Piedra cortada": 100, "Plata": 1000},
     
     "Balista verde": {"Madera seca": 200, "Hierro en bruto": 100, "Cuero curtido": 50, "Tela aspera": 50, "Plata": 250},
     "Balista azul": {"Madera alisada": 100, "Hierro fundido": 50, "Cuero tratado": 50, "Tela barata": 50, "Plata": 500},
@@ -139,7 +139,7 @@ for artilleria, imagen_tk in imagenes_artillerias.items():
         fila += 1
 
 # Mostrar la artillería seleccionada
-label_seleccion = tk.Label(frame_artillerias, text="Artillería seleccionada: Ninguna", bg="#f0f0f0", font=("Helvetica", 12))
+label_seleccion = tk.Label(frame_artillerias, text="Artillería seleccionada: Ninguna", bg="#f0f0f0", font=("Helvetica", 12), width=30)
 label_seleccion.grid(row=fila, column=0, columnspan=3, pady=2)
 
 # Frame para mostrar resultados de materiales
