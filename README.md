@@ -2,8 +2,8 @@
 
 Link to the ones that doesn't know how to use git/Link para los que no saben usar git:
 
-- Crafter [1080P](https://www.mediafire.com/file/i21ubvouljteevu/arty_craft_v0.1.exe/file)
-- Crafter [720P](https://www.mediafire.com/file/j17mr6pz99y7ptb/arty_craft_720_v0.1.exe/file) 
+- Crafter [1080P](https://www.mediafire.com/file/i21ubvouljteevu/arty_craft_v0.1.exe/file) *OUTDATED: Old prices*
+- Crafter [720P](https://www.mediafire.com/file/lber4vsbmbvcbmh/arty_craft_720_v0.2.exe/file) 
 
 ## Social Media
 
