@@ -2,12 +2,14 @@
 
 Link to the ones that doesn't know how to use git/Link para los que no saben usar git:
 
-- Crafter [1080P](https://www.mediafire.com/file/i21ubvouljteevu/arty_craft_v0.1.exe/file) *OUTDATED: Old prices*
-- Crafter [720P](https://www.mediafire.com/file/lber4vsbmbvcbmh/arty_craft_720_v0.2.exe/file) 
+- Crafter [720P](https://www.mediafire.com/file/ir764vriigdt6al/artycraft720_v1.exe/file)
 
+  
+- Crafter [1080P]() *OUTDATED: Old prices*
+- 
 ## Upcoming features
 
-- Button increase/decrease 1, 5 / Boton para sumar o restar 1, 5
+- Button increase/decrease 1, 5 / Boton para sumar o restar 1, 5 ---> DONE
 
 ## Social Media
 
